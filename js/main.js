@@ -16,7 +16,6 @@ const resources = [
 
 let texTileMap;
 let screenQuad;
-let time = 0;
 let mainLayer;
 let backLayer;
 let vpx = 0;
@@ -137,8 +136,6 @@ function tick( timeStamp )
 		lastFrameTime = timeStamp;
 	let dt = Math.min((timeStamp - lastFrameTime) / 1000, 0.1); // защита от больших скачков после сна вкладки
 	lastFrameTime = timeStamp;
-
-	time += 1;
 
 	updateCamera(dt);
 
